@@ -13,7 +13,7 @@ public class Person {
         System.out.println("Person Bean created");
     }
 
-    @Autowired
+    @Autowired //constructor injection
     public Person(Engine engine) {
         this.engine = engine;
         System.out.println("Person Bean created");
@@ -40,7 +40,8 @@ public class Person {
         return engine;
     }
 
-    public void setEngine(Engine engine) {
-        this.engine = engine;
-    }
+//    @Autowired
+//    public void setEngine(Engine engine) {
+//        this.engine = engine;
+//    }
 }
